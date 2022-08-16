@@ -1,0 +1,265 @@
+/* Root Styles */
+body {
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: auto 15%;
+}
+
+.testemonials-box-colton {
+    margin-top: 0;
+}
+
+.testemonials-box-irene {
+    margin-top: 64px;
+}
+
+.testemonials-box-anne {
+    margin-top: 128px;
+}
+
+/* Sections and Divs */
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    gap: 128px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 45%;
+}
+
+.ratings{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    width: 55%
+}
+
+.ratings-stars {
+    display: flex;
+    width: 80%;
+    gap: 8px;
+    justify-content: center;
+    background-color: hsl(300, 24%, 96%);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.icon-star {
+    width: 18px;
+    height: 18px;
+}
+
+.testemonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    padding: 64px 0;
+}
+
+.testemonials-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 16px;
+}
+
+.testemonials-profile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.profile-img {
+    border-radius: 100%;
+    width: 52px;
+}
+
+.ratings-stars-reviews {
+    align-self: flex-start;
+}
+
+.ratings-stars-guru {
+    align-self: center;
+}
+
+.ratings-stars-besttech {
+    align-self: flex-end;
+}
+
+.pattern-top-desktop {
+    position: absolute;
+    width: 35%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.pattern-bottom-desktop {
+    position: absolute;
+    width: 35%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+
+.pattern-top-mobile {
+    display: none;
+}
+
+.pattern-bottom-mobile {
+    display: none;
+}
+
+
+
+/* Font Styles */
+
+h1.section-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    line-height: 3.4rem;
+}
+
+p {
+    color: hsl(303, 10%, 53%);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+p.ratings-stars-by {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-left: 32px;
+}
+
+p.name {
+    font-weight: 600;
+    color: white;
+    font-size: 1.4rem;
+}
+
+
+p.verified {
+    color: hsl(333, 80%, 67%);
+    font-size: 1.0rem;
+}
+
+p.testemonials-txt {
+    color: #ffffff;
+    font-size: 1.0rem;
+}
+
+
+@media screen and (max-width: 1440px){
+
+    main {
+        margin-top: 64px;
+    }
+
+    .pattern-top-desktop {
+        display: none;
+    }
+    
+    .pattern-bottom-desktop {
+        display: none;
+    }
+    
+    
+    .pattern-top-mobile {
+        position: absolute;
+        width: 35%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    
+    .pattern-bottom-mobile {
+        position: absolute;
+        width: 35%;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .top {
+        flex-direction: column;
+        gap:32px;
+    }
+
+    .ratings {
+        width: 100%;
+    }
+
+
+    .ratings-stars-reviews {
+        align-self: center;
+    }
+    
+    .ratings-stars-guru {
+        align-self: center;
+    }
+    
+    .ratings-stars-besttech {
+        align-self: center;
+    }
+
+    .ratings-stars {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        gap: 8px;
+        justify-content: center;
+        background-color: hsl(300, 24%, 96%);
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .testemonials {
+        flex-direction: column;
+    }
+
+    .testemonials-box-colton {
+        margin-top: 0;
+    }
+    
+    .testemonials-box-irene {
+        margin-top: 0;
+    }
+    
+    .testemonials-box-anne {
+        margin-top: 0;
+    }
+
+    p.ratings-stars-by {
+        margin-left: 0;
+    }
+
+}
